@@ -1,5 +1,4 @@
-from js import document
-
-message = "Hello from main.py!"
-document.getElementById("output").innerText = message
+def run():
+    from js import document
+    document.getElementById("output").innerText = "Hello from main.py (imported)!"
 
