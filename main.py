@@ -1,14 +1,10 @@
-import numpy as np
-import matplotlib.pyplot as plt
-from pyscript import display  # 导入pyscript的display函数
+from pyscript import display
 
-# 绘制图形代码
-x = np.linspace(0, 10, 100)
-y = np.sin(x)
-plt.plot(x, y)
+# 定义一个简单的字符串
+message = "Hello from main.py!"
 
-# 获取当前的图形对象
-fig = plt.gcf()
+# 将字符串显示到HTML页面中id为"output"的元素里
+display(message, target="output")
 
-# 使用display函数将图形渲染到指定的HTML元素中
-display(fig, target="my-plot")
+# 或者你可以打印到控制台，然后在浏览器中检查
+# print("This message is from main.py, check the console!")
