@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My First PyScript</title>
+  <title>PyScript Test</title>
   <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-  <script src="https://pyscript.net/latest/pyscript.js"></script>
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 <body>
-  <h1>this is  title in html</h1>
+  <h1>Test HTML + Python</h1>
   <div id="output"></div>
 
-  <!-- 正确的写法 -->
-  <py-script src="main.py"></py-script>
+  <py-script>
+import main
+main.run()
+  </py-script>
 </body>
 </html>
+
 
 
 
